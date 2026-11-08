@@ -34,7 +34,7 @@ CREATE TABLE `barang` (
   `harga` int NOT NULL,
   `stok` int NOT NULL,
   `supplier_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `barang`
@@ -64,7 +64,7 @@ CREATE TABLE `pelanggan` (
   `jenis_kelamin` enum('L','P') NOT NULL,
   `telp` varchar(12) NOT NULL,
   `alamat` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `pelanggan`
@@ -94,7 +94,7 @@ CREATE TABLE `pembayaran` (
   `total` int NOT NULL,
   `metode` enum('TUNAI','TRANSFER','EDC') NOT NULL,
   `transaksi_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `pembayaran`
@@ -123,7 +123,7 @@ CREATE TABLE `supplier` (
   `nama` varchar(100) NOT NULL,
   `telp` varchar(12) NOT NULL,
   `alamat` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `supplier`
@@ -153,7 +153,7 @@ CREATE TABLE `transaksi` (
   `keterangan` text NOT NULL,
   `total` int NOT NULL,
   `pelanggan_id` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `transaksi`
@@ -182,7 +182,7 @@ CREATE TABLE `transaksi_detail` (
   `barang_id` int NOT NULL,
   `harga` int NOT NULL,
   `qty` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `transaksi_detail`
@@ -214,7 +214,7 @@ CREATE TABLE `user` (
   `alamat` varchar(150) NOT NULL,
   `hp` varchar(20) NOT NULL,
   `level` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `user`
